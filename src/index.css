@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 180 100% 97%;
+    --foreground: 210 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 15% 20%;
+
+    --primary: 120 100% 25%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 120 50% 95%;
+    --secondary-foreground: 120 20% 30%;
+
+    --muted: 120 30% 95%;
+    --muted-foreground: 120 15% 50%;
+
+    --accent: 140 100% 35%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 180 50% 90%;
+    --input: 180 50% 90%;
+    --ring: 187 100% 42%;
+
+    /* Greenovate theme colors */
+    --education-primary: 120 100% 25%;
+    --education-light: 120 50% 97%;
+    --education-card: 0 0% 100%;
+    --education-text: 120 30% 15%;
+    --education-accent: 100 100% 40%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(120 100% 25%), hsl(140 100% 35%));
+    --gradient-light: linear-gradient(180deg, hsl(120 50% 97%), hsl(120 30% 95%));
+    
+    /* Shadows */
+    --shadow-card: 0 4px 20px -2px hsl(120 100% 25% / 0.1);
+    --shadow-hover: 0 8px 30px -5px hsl(120 100% 25% / 0.2);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 15% 8%;
+    --foreground: 180 100% 95%;
+
+    --card: 210 15% 10%;
+    --card-foreground: 180 100% 95%;
+
+    --popover: 210 15% 10%;
+    --popover-foreground: 180 100% 95%;
+
+    --primary: 187 100% 50%;
+    --primary-foreground: 210 15% 8%;
+
+    --secondary: 210 15% 15%;
+    --secondary-foreground: 180 100% 90%;
+
+    --muted: 210 15% 15%;
+    --muted-foreground: 180 50% 70%;
+
+    --accent: 187 100% 50%;
+    --accent-foreground: 210 15% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 180 100% 95%;
+
+    --border: 210 15% 20%;
+    --input: 210 15% 20%;
+    --ring: 187 100% 50%;
+
+    /* Dark mode educational colors */
+    --education-primary: 187 100% 50%;
+    --education-light: 210 15% 8%;
+    --education-card: 210 15% 10%;
+    --education-text: 180 100% 95%;
+    --education-accent: 45 100% 70%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
