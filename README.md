@@ -23,7 +23,7 @@ Deployment: Continuous deployment using Netlify/Vercel
 
 📦 Installation & Setup
 Clone the repository
-git clone https://github.com/shravanisdakve/greenovate.git
+git clone https://github.com/username/greenovate.git
 cd greenovate
 
 
